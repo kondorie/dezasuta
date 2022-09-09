@@ -96,7 +96,7 @@ body{
 
 .text1{
   font-size: 30px;
-  
+  letter-spacing: 0.1em;
 }
 
 h2{
@@ -110,6 +110,7 @@ h2{
 .text2{
   font-size: 23px;
   line-height: 38px;
+  letter-spacing: 0.1em;
 }
 .about{
   display: flex;
@@ -125,9 +126,7 @@ h2{
 }
 
 .images img{
-  width: 850px;
-  height: 566px;
-  object-fit: cover;
+  width: 100%;
   border-bottom-right-radius: 100px;
 }
 
