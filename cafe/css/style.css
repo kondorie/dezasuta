@@ -134,6 +134,7 @@ h2 {
 
 .images {
     width: 50%;
+    max-width: 850px;
 }
 
 .images img {
@@ -370,7 +371,7 @@ footer p {
     }
 
     .sp_nav {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -400,7 +401,7 @@ footer p {
     }
 
     h2 {
-        font-size: 79px;
+        font-size: 70px;
     }
     .text2 {
         font-size: 20px;
@@ -410,12 +411,25 @@ footer p {
         width: 267px;
     }
 
+    .text_area {
+        width: 410px;
+        margin-left: 80px;
+        margin-top: 40px;
+        padding-right: 10px;
+    }
+
     h4 {
         font-size: 41px;
     }
 }
 
 @media screen and (max-width: 767px) {
+    .heading {
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 60px;
+    }
+
     .text1 {
         font-size: 17px;
     }
@@ -423,6 +437,9 @@ footer p {
     h2 {
         font-size: 38px;
         letter-spacing: 0.02em;
+        line-height: 1.15;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
     .text2 {
         display: none;
@@ -432,6 +449,7 @@ footer p {
         display: block;
         font-size: 16px;
         line-height: 1.87;
+        letter-spacing: 0.1em;
     }
 
     .about {
@@ -439,20 +457,34 @@ footer p {
     }
 
     .sp_about {
-        display: block;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 17px;
     }
 
-    .about h3 {
+    .sp_about h3 {
+        width: 160px;
+    }
+
+    .text_area h3 {
         display: none;
     }
 
     .text_area {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
+        padding-right: 0;
+    }
+
+    .text_area p {
+        line-height: 1.75;
     }
 
     h4 {
         font-size: 36px;
+        line-height: 1.25;
+        margin-top: 36px;
     }
 
     .images {
@@ -465,8 +497,13 @@ footer p {
         border-bottom-right-radius: 0;
     }
 
+    .menu {
+        margin-top: 55px;
+    }
+
     .menu h3 {
         width: 88px;
+        margin: 0 auto 20px auto;
     }
     .menu_wrap {
         flex-direction: column;
@@ -476,19 +513,23 @@ footer p {
 
     .menu_inner {
         width: 80%;
-        margin-bottom: 60px;
+        margin-bottom: 55px;
+    }
+    .menu_inner p {
+        line-height: 1.58;
+        margin-top: -50px;
     }
 
     h5 {
         font-size: 40px;
     }
     .gallery {
-        margin-top: 40px;
+        margin-top: 25px;
     }
 
     .gallery h3 {
         width: 142px;
-        padding-bottom: 20px;
+        padding-bottom: 18px;
     }
 
     .image_list ul {
@@ -502,6 +543,11 @@ footer p {
     .slid img {
         display: none;
     }
+
+    .event {
+        margin-top: 33px;
+    }
+
     .event h3 {
         width: 100px;
     }
@@ -510,7 +556,7 @@ footer p {
         max-width: 1000px;
         justify-content: center;
         font-size: 16px;
-        margin: 35px 15px 0px;
+        margin: 20px 15px 0px;
         background: #fff;
         border: 3px solid #4f260b;
         padding: 20px 20px 0;
@@ -525,6 +571,7 @@ footer p {
 
     .event_list time {
         margin-right: 50px;
+        margin-bottom: 5px;
     }
 
     .event_list a {
@@ -534,11 +581,52 @@ footer p {
         white-space: nowrap;
     }
 
+    .access {
+        margin-top: 30px;
+    }
+
     .access h3 {
         width: 124px;
     }
     iframe {
         height: 191px;
-        margin-top: 47px;
+        margin-top: 9px;
+    }
+    .footer {
+        display: block;
+        margin: 0 auto;
+        padding-top: 48px;
+        padding-left: 20px;
+    }
+
+    .footer_logo {
+        width: 226px;
+        margin-right: 65px;
+        margin-bottom: 33px;
+    }
+
+    .footer_logo img {
+        display: block;
+    }
+
+    .btn {
+        width: 100px;
+        position: fixed;
+        bottom: 30px;
+        right: 2%;
+    }
+
+    .info li {
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: black;
+    }
+
+    footer p {
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 30px;
+        font-size: 16px;
+        color: black;
     }
 }
