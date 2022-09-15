@@ -408,18 +408,25 @@ footer p {
     }
 
     .about h3 {
-        width: 267px;
+        width: 230px;
     }
 
     .text_area {
-        width: 410px;
-        margin-left: 80px;
-        margin-top: 40px;
+        width: 45%;
+        margin: auto;
         padding-right: 10px;
     }
 
     h4 {
-        font-size: 41px;
+        font-size: 33px;
+        margin-top: 15px;
+    }
+
+    .text_area p {
+        font-size: 16px;
+    }
+    .event_list time {
+        margin-right: 40px;
     }
 }
 
