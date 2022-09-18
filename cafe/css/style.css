@@ -5,6 +5,8 @@ body,
 h1,
 h2,
 h3,
+h4,
+h5,
 p,
 dl,
 dt,
@@ -134,7 +136,6 @@ h2 {
 
 .images {
     width: 50%;
-    max-width: 850px;
 }
 
 .images img {
@@ -199,12 +200,12 @@ h5 {
     font-size: 38px;
     font-weight: normal;
     margin-top: -13px;
+    margin-bottom: 14px;
 }
 
 .menu_inner p {
     font-size: 17px;
     line-height: 1.47;
-    margin-top: -45px;
 }
 
 .gallery {
@@ -231,7 +232,6 @@ h5 {
 }
 
 .event_list {
-    max-width: 1000px;
     display: flex;
     justify-content: center;
     font-size: 23px;
@@ -250,7 +250,7 @@ h5 {
 }
 
 .event_list a {
-    border-bottom: 1px solid #4f260b;
+    text-decoration: underline;
 }
 
 .access {
@@ -284,10 +284,6 @@ footer {
 .footer_logo {
     width: 226px;
     margin-right: 65px;
-}
-
-.footer_logo img {
-    display: block;
 }
 
 .btn {
@@ -431,6 +427,9 @@ footer p {
 }
 
 @media screen and (max-width: 767px) {
+    .header-wrap h1 {
+        width: 187px;
+    }
     .heading {
         text-align: center;
         margin-top: 40px;
@@ -464,14 +463,13 @@ footer p {
     }
 
     .sp_about {
-        display: flex;
-        text-align: center;
-        justify-content: center;
+        display: block;
         margin-bottom: 17px;
     }
 
     .sp_about h3 {
         width: 160px;
+        margin: 0 auto;
     }
 
     .text_area h3 {
@@ -495,7 +493,6 @@ footer p {
     }
 
     .images {
-        display: block;
         width: 100%;
     }
 
@@ -524,11 +521,11 @@ footer p {
     }
     .menu_inner p {
         line-height: 1.58;
-        margin-top: -50px;
     }
 
     h5 {
         font-size: 40px;
+        margin-bottom: 16px;
     }
     .gallery {
         margin-top: 25px;
@@ -560,17 +557,16 @@ footer p {
     }
 
     .event_list {
-        max-width: 1000px;
-        justify-content: center;
         font-size: 16px;
         margin: 20px 15px 0px;
-        background: #fff;
-        border: 3px solid #4f260b;
         padding: 20px 20px 0;
     }
 
+    .event_list ul {
+        width: 100%;
+    }
+
     .event_list li {
-        width: 85%;
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -608,12 +604,7 @@ footer p {
 
     .footer_logo {
         width: 226px;
-        margin-right: 65px;
         margin-bottom: 33px;
-    }
-
-    .footer_logo img {
-        display: block;
     }
 
     .btn {
@@ -630,10 +621,7 @@ footer p {
     }
 
     footer p {
-        text-align: center;
         padding-top: 40px;
         padding-bottom: 30px;
-        font-size: 16px;
-        color: black;
     }
 }
