@@ -578,7 +578,6 @@ footer p {
     }
 
     .event_list a {
-        border-bottom: 1px solid #4f260b;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
