@@ -544,10 +544,6 @@ footer p {
         width: 100%;
     }
 
-    /* .slid img {
-        display: none;
-    } */
-
     .event {
         margin-top: 33px;
     }
@@ -635,18 +631,11 @@ footer p {
 }
 
 .slick-arrow {
-    display: block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
     margin: auto 10%;
-    padding: 0;
     width: 19px;
     height: 38px;
-    color: transparent;
     z-index: 1;
     transition: opacity 0.5s;
-    z-index: 1;
 }
 .slick-arrow:hover {
     opacity: 0.7;
@@ -657,7 +646,7 @@ footer p {
 .slick-prev::before,
 .slick-prev::after {
     position: absolute;
-    top: -20;
+    top: 0;
     bottom: 0;
     margin: auto;
     content: "";
