@@ -278,12 +278,13 @@ h4 {
     content: "";
     position: absolute;
     top: 0;
-    left: 13px;
-    width: 95%;
+    left: 50%;
+    width: calc(100% - 30px);
     height: 100%;
     background: #666666;
     opacity: 0;
     transition: 0.3s;
+    transform: translateX(-50%);
 }
 
 /* ホバーした時のbeforeの不透明度を0.7にして表示 */
@@ -304,7 +305,7 @@ h4 {
     color: #fff;
     font-family: "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho",
         serif;
-    background-image: url(images/yazirushi.png);
+    background-image: url(../images/yazirushi.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position-y: 20px;
