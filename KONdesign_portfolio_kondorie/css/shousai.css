@@ -110,7 +110,7 @@ main {
 }
 
 .lp_all {
-    margin: 0 auto;
+    margin: 0 auto 70px auto;
     width: 80%;
 }
 
@@ -123,6 +123,44 @@ main {
 }
 .period {
     margin-top: 50px;
+}
+
+.banner_all {
+    margin-bottom: 70px;
+}
+
+.return {
+    text-align: center;
+    margin-top: 70px;
+}
+
+.returnbtn {
+    position: relative;
+    padding-left: 20px;
+}
+
+.returnbtn::before,
+.returnbtn::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    width: 8px;
+    height: 8px;
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
+}
+
+.returnbtn::before {
+    left: 0;
+}
+
+.returnbtn::after {
+    left: 8px;
+}
+
+.returnbtn:hover {
+    opacity: 0.7;
 }
 @media screen and (max-width: 1100px) {
     .post_pc_nav {
