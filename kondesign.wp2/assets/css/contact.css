@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+.contact-top-wrap {
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+
+.c_header_img {
+    width: 92%;
+    margin: 0 0 0 auto;
+}
+
+.c_header_img img {
+    width: 100%;
+    height: 465px;
+    object-fit: cover;
+}
+
+.contact_head_text {
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    bottom: -155px;
+    left: 12%;
+}
+
+.c_heading {
+    font-size: 65px;
+    letter-spacing: 0.2em;
+}
+.c_heading span {
+    color: #fff;
+}
+
+.c_heading_sub {
+    writing-mode: unset;
+    font-size: 48px;
+    letter-spacing: 0.2em;
+    margin-left: 20px;
+    padding-bottom: 10px;
+}
+
+.c_top_txt {
+    margin-top: 280px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    line-height: 35px;
+}
+
+form {
+    width: 50%;
+    margin: 147px auto 133px auto;
+}
+
+.item {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+.item span {
+    font-size: 14px;
+    color: #b03b19;
+    padding-left: 10px;
+}
+
+.item_box {
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 1px solid #dad8d8;
+}
+
+textarea {
+    border: 1px solid #dad8d8;
+}
+
+.formbtn {
+    width: 90px;
+    margin: 0 auto;
+}
+
+.c_btn {
+    padding: 5px 25px;
+    letter-spacing: 0.2em;
+    background: #fff;
+    border: 1px solid #666;
+    box-shadow: 1px 3px 5px #808080;
+}
+
+@media screen and (max-width: 1100px) {
+    .c_header_img {
+        width: 100%;
+    }
+
+    .contact_head_text {
+        position: absolute;
+        bottom: 27px;
+        left: 5%;
+    }
+
+    .c_heading {
+        font-size: 45px;
+        color: #fff;
+    }
+
+    .c_heading_sub {
+        font-size: 20px;
+        color: #fff;
+        margin-left: 20px;
+    }
+
+    .c_top_txt {
+        letter-spacing: 0.1em;
+        padding: 0 10px;
+        font-size: 16px;
+        margin-top: 90px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .contact_head_text {
+        bottom: 0;
+        left: 5%;
+    }
+
+    .c_heading_sub {
+        margin-left: 15px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    .item span {
+        font-size: 12px;
+    }
+    form {
+        width: 80%;
+        margin: 100px auto 90px auto;
+    }
+}
