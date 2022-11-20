@@ -1,0 +1,476 @@
+@charset "UTF-8";
+
+header {
+    position: relative;
+    bottom: 0;
+    right: 0;
+}
+
+.w_header_img {
+    width: 92%;
+}
+
+.w_header_img img {
+    width: 100%;
+    height: 465px;
+    object-fit: cover;
+}
+
+.works_head_text {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    position: absolute;
+    bottom: 163px;
+    right: 12%;
+}
+
+.w_heading {
+    font-size: 65px;
+    letter-spacing: 0.2em;
+}
+.w_heading span {
+    color: #fff;
+}
+
+.w_heading_2 {
+    writing-mode: unset;
+    font-size: 48px;
+    letter-spacing: 0.2em;
+    margin-right: 20px;
+    padding-bottom: 10px;
+}
+
+.w_top_text {
+    text-align: center;
+    margin-bottom: 140px;
+    margin-top: 300px;
+}
+
+.flex_img_left {
+    background: #ebebeb;
+    padding: 50px 0 35px 0;
+}
+
+.w_inner {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.w_sp_inner {
+    display: none;
+}
+
+.w_img {
+    width: 60%;
+}
+
+.text_box {
+    width: 32%;
+    margin: 0 auto;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.desc {
+    line-height: 25px;
+}
+
+.text_box dl dt {
+    width: 45%;
+}
+
+.text_box dl dd {
+    width: 40%;
+}
+
+.text_box dt,
+.text_box dd {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.w_btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 0.5em 1em;
+    width: 200px;
+    color: #333;
+    font-size: 16px;
+    font-weight: normal;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.w_btn::before {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    right: -7px;
+    width: 100%;
+    height: 1px;
+    background-color: #666;
+    transition: 0.2s ease 0s;
+}
+
+.w_btn::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: -7px;
+    width: 1px;
+    height: 100%;
+    background-color: #666;
+    transition: 0.2s ease 0.2s;
+}
+
+.w_btn::before:hover::before {
+    width: 0%;
+}
+
+.w_btn:hover::after {
+    height: 0%;
+}
+
+.w_btn:hover {
+    text-decoration: none;
+    background-color: #808080;
+}
+
+.flex_img_right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 50px 0 35px 0;
+}
+
+.w_inner_rigth {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    padding: 50px 0 35px 0;
+    width: 80%;
+}
+
+.right {
+    margin: 0 auto;
+}
+
+.w_img_x200 {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.w_img_x200 img {
+    width: 80%;
+}
+
+.banner_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 90px;
+}
+.banner_wrap a {
+    display: block;
+}
+.b_pc_inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    box-shadow: 2px 4px 10px rgba(128, 128, 128, 30%);
+    width: 490px;
+    height: 260px;
+    padding: 20px 15px;
+    margin: 15px;
+}
+
+.b_img_area {
+    width: 50%;
+}
+
+.b_img_area img {
+    width: 100%;
+}
+
+.b_txt_area {
+    width: 45%;
+    margin: 0 0 0 auto;
+}
+
+.b_name {
+    font-size: 16px;
+}
+
+.trace {
+    padding-bottom: 35px;
+}
+
+.famm1 {
+    padding-bottom: 10px;
+}
+
+.famm2 {
+    padding-bottom: 0;
+}
+
+.land {
+    padding-bottom: 20px;
+}
+
+.banner_box p {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.b_desc {
+    line-height: 22px;
+}
+
+.banner_box dl dt {
+    width: 45%;
+}
+
+.banner_box dl dd {
+    width: 55%;
+}
+
+.banner_box dt,
+.banner_box dd {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.skill {
+    line-height: 25px;
+}
+
+.wide {
+    width: 641px;
+    height: 200px;
+}
+
+.b_sp_inner {
+    display: none;
+}
+
+.card {
+    display: block;
+    cursor: pointer;
+    position: relative; /* ココ大事 */
+}
+
+/* 疑似要素beforeにグレー背景を指定し、不透明度を0にしておく */
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: calc(100% - 30px);
+    height: 100%;
+    background: #666666;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateX(-50%);
+}
+
+/* ホバーした時のbeforeの不透明度を0.7にして表示 */
+.card:hover::before {
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+/* 文字を入れ、上下左右中央に配置 */
+.card:hover::after {
+    content: "全て見る";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px; /* 横幅は適宜変更 */
+    height: 40px; /* 高さは適宜変更 */
+    color: #fff;
+    font-family: "YuMincho", "Hiragino Mincho ProN", "Yu Mincho", "MS PMincho",
+        serif;
+    background-image: url(../images/yazirushi.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position-y: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .w_header_img {
+        width: 100%;
+    }
+
+    .works_head_text {
+        position: absolute;
+        bottom: 300px;
+        right: 5%;
+    }
+
+    .w_heading {
+        font-size: 45px;
+        letter-spacing: 0.2em;
+        color: #fff;
+    }
+
+    .w_heading_2 {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    .lp_name {
+        margin-top: -100px;
+    }
+
+    .w_top_text {
+        width: 80%;
+        letter-spacing: 0.1em;
+        margin: 95px auto 140px auto;
+    }
+
+    .w_top_text p {
+        line-height: 25px;
+    }
+
+    .w_inner {
+        display: none;
+    }
+
+    .w_inner_rigth {
+        display: none;
+    }
+
+    .w_sp_inner {
+        display: block;
+        text-align: center;
+        padding: 40px 0 30px 0;
+    }
+
+    .w_sp_inner dl {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner_box dl dt {
+        width: 50%;
+    }
+
+    .banner_box dl dd {
+        width: 50%;
+    }
+
+    .banner_box dl {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .w_sp_txt_area {
+        margin-top: 40px;
+    }
+
+    .w_btn {
+        margin: 30px auto 0 auto;
+    }
+
+    .code_skill dt,
+    .code_skill dd {
+        width: 35%;
+    }
+
+    .flex_img_right {
+        display: block;
+    }
+
+    .b_sp_inner {
+        display: block;
+    }
+
+    .b_name {
+        margin-bottom: 45px;
+        position: relative;
+        top: -8px;
+    }
+
+    .white {
+        padding: 88px 0 80px 0;
+    }
+
+    .back_color {
+        background: #ebebeb;
+        padding-bottom: 85px;
+    }
+
+    .b_pc_inner {
+        display: none;
+    }
+
+    .banner_wrap {
+        display: block;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .b_img_area {
+        width: 55%;
+        margin: 25px auto;
+    }
+
+    .b_img_area img {
+        width: 100%;
+    }
+
+    .day {
+        width: 60%;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .day dt {
+        width: 50%;
+        font-weight: normal;
+    }
+
+    .day dd {
+        width: 50%;
+        font-weight: normal;
+    }
+
+    .code_skill dt {
+        font-weight: normal;
+    }
+
+    .code_skill dd {
+        font-weight: normal;
+    }
+
+    .w_img_x200 img {
+        width: 100%;
+    }
+
+    .desc,
+    .b_desc {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    h4 {
+        font-size: 20px;
+    }
+}
